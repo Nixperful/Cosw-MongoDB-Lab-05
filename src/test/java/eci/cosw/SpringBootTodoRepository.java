@@ -40,7 +40,6 @@ public class SpringBootTodoRepository {
         assertEquals( firstResult.size()+1 ,secondResult.size());
     }
 
-
 }
 
 
