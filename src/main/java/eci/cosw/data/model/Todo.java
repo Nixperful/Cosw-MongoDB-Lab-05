@@ -6,14 +6,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Todo {
 
-    @Id
+
     private String description;
-    private Integer priority;
+    private String priority;
     private String dueDate;
     private String responsible;
     private String status;
 
-    public Todo(String description, Integer priority, String dueDate, String responsible, String status) {
+    public Todo(){}
+
+    public Todo(String description, String priority, String dueDate, String responsible, String status) {
         this.description = description;
         this.priority = priority;
         this.dueDate = dueDate;
@@ -29,11 +31,11 @@ public class Todo {
         this.description = description;
     }
 
-    public Integer getPriority() {
+    public String getPriority() {
         return priority;
     }
 
-    public void setPriority(Integer priority) {
+    public void setPriority(String priority) {
         this.priority = priority;
     }
 

@@ -6,18 +6,17 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 
-public interface TodoRepository extends MongoRepository<Todo, String> {
+public interface TodoRepository extends MongoRepository<Todo,String> {
 
-    Todo findByDescription(String description);
+    //To do findByDescription(String description);
 
-    List<Todo> findByPriority(Integer priority);
+    //List<To do> findByPriority(String priority);
 
-    List<Todo> findByDate(String date);
+    //List<To do> findByDate(String dueDate);
 
     List<Todo> findByResponsible(String responsible);
 
-    List<Todo> findByStatus(String status);
-
+    //List<To do> findByStatus(String status);
 
 
 
